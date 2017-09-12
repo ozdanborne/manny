@@ -1,0 +1,3 @@
+# Manny
+
+Simple Manifest Generator

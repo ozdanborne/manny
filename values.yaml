@@ -1,0 +1,23 @@
+calicoVersion: v2.5.1
+calicoMajorMinor: v2.5
+
+# Select a networking backend. Can be 'flannel', 'gobgp', 'bird', 'none'
+networking: bird
+
+# Select an ipam plugin. Can be `calico-ipam` or `host-local`
+ipam: calico-ipam
+
+datastore:
+  # Can be etcd, byoEtcd, or kubernetes
+  type: etcd
+  location: http://127.0.0.1:2379
+
+# Kubernetes Major.Minor version. No revision!
+# kubernetesVersion: v1.7
+
+logLevel: info
+
+calicoImages:
+  node: quay.io/calico/node:v2.5.1
+  cniPlugin: quay.io/calico/cni:v1.10.0
+  policyController: quay.io/calico/kube-policy-controller:v0.7.0
