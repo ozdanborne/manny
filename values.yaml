@@ -8,8 +8,8 @@ networking: bird
 ipam: calico-ipam
 
 datastore:
-  # Can be etcd, byoEtcd, or kubernetes
-  type: etcd
+  # Can be selfHostedEtcd, byoEtcd, or kubernetes
+  type: byoEtcd
   location: http://127.0.0.1:2379
 
 # Kubernetes Major.Minor version. No revision!

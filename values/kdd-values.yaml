@@ -1,0 +1,3 @@
+datastore:
+    location: http://10.96.232.136:6666
+    type: byoEtcd
